@@ -11,6 +11,8 @@ gem 'bootstrap-sass'
 gem 'autoprefixer-rails'
 gem 'devise'
 gem 'rspec'
+gem 'mail_form'
+gem 'simple_form'
 
 
 group :doc do

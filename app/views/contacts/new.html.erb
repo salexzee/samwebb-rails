@@ -1,0 +1,12 @@
+<header class="pages-header">
+	<h1>Contact Me</h1>
+</header>
+
+<%= simple_form_for @contact, :html => {:class => 'contact-form' } do |f| %>
+	<%= f.input :name, :required => true %>
+	<%= f.input :email, :required => true %>
+	<%= f.input :message, :as => :text, :required => false, :input_html => {:rows => 10} %>
+
+	<%= f.input :nickname, :hint => 'Leave this field blank!' %>
+	<%= f.button :submit, 'Send message', :class => 'btn' %>
+<% end %>

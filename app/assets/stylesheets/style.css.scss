@@ -83,6 +83,39 @@ h6 {
 	}
 }
 
+.portfolio {
+	-webkit-padding-start: 0;
+
+
+	.portfolio-block {
+		width: 30%;
+		display: inline-block;
+		margin-right: 1%;
+		padding: 5px;
+		border: 1px solid $grey;
+		opacity: .5;
+		margin-top: 1.5%;
+
+		a {
+			color: $black;
+			text-decoration: none;
+		}
+
+		img {
+			width: 100%;
+		}
+
+		p {
+			font-size: 1em;
+		}
+	}
+
+	.portfolio-block:hover {
+		opacity: 1;
+	}
+}
+
+
 @media (max-width: 800px) {
 	body {
 		font-size: .6em;
@@ -112,6 +145,12 @@ h6 {
 			li:hover {
 				background: $light-grey;
 			}
+		}
+	}
+
+	.portfolio {
+		.portfolio-block {
+			width: 44%;
 		}
 	}
 }

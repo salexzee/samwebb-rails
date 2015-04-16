@@ -8,6 +8,7 @@ $primary-font-stack: 'Noto Sans', sans-serif;
 $white: #fff;
 $black: #2b2b2b;
 $grey: #999;
+$light-grey: #eaeaea;
 $ruby-red: #b22;
 
 
@@ -79,5 +80,38 @@ h6 {
 	
 	p {
 		font-size: 1.8em;
+	}
+}
+
+@media (max-width: 800px) {
+	body {
+		font-size: .6em;
+	}
+
+	.nav {
+		border-bottom: none;
+		width: 100%;
+		margin-left: 0;
+
+		ul {
+			width: 100%;
+			text-indent: none;
+			-webkit-padding-start: 0;
+			margin-top: 0;
+
+			li {
+				display: block;
+				width: 100%;
+				border-bottom: 1px solid $grey;
+
+				a {
+					padding: 10px 0;
+					display: block;
+				}
+			}
+			li:hover {
+				background: $light-grey;
+			}
+		}
 	}
 }

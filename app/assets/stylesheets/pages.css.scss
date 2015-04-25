@@ -1,3 +1,20 @@
 // Place all the styles related to the pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.footer {
+	display: absolute;
+	bottom: 0;
+	width: 100%;
+	background: #2b2b2b;
+	padding: 20px 0;
+	color: #777;
+	text-align: center;
+	margin-top: 10px;
+
+	p {
+		margin-bottom: 0;
+		margin-top: 0;
+		font-size: .8em;
+	}
+}

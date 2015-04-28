@@ -60,6 +60,12 @@ h6 {
 				color: $black;
 				text-decoration: underline;
 			}
+
+			.header-icon:hover {
+				text-decoration: none;
+				color: $ruby-red;
+				margin-right: 0;
+			}
 		}
 	}
 }

@@ -2,11 +2,13 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+@import 'variables';
+
 .footer {
 	display: absolute;
 	bottom: 0;
 	width: 100%;
-	background: #2b2b2b;
+	background: $black;
 	padding: 20px 0;
 	color: #777;
 	text-align: center;

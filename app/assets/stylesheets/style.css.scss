@@ -72,13 +72,23 @@ h6 {
 	}
 }
 
-.main-content {
+.container {
 	width: 80%;
 	margin: 0 auto;
-	
-	p {
-		font-size: 1.8em;
-	}
+}
+
+.main-content p {
+	font-size: 1.8em;
+}
+
+.full {
+	width: 100%;
+}
+
+.bg-change {
+	background: $light-grey;
+	border-top: 1px solid $grey;
+	border-bottom: 1px solid $grey;
 }
 
 .portfolio {

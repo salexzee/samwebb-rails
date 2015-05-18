@@ -6,4 +6,4 @@ This is specifically for me to demonstrate what I can do so I won't be taking an
 
 ---------
 
-If you'd like to talk to me, contact me on Twitter @samthewebb
+If you'd like to talk to me, contact me on Twitter @samthewebb or email me at 510samwebb@gmail.com

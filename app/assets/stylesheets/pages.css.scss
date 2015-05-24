@@ -5,13 +5,14 @@
 @import 'variables';
 
 .footer {
-	display: absolute;
+	position: absolute;
 	bottom: 0;
 	width: 100%;
 	background: $black;
 	padding: 20px 0;
 	color: #777;
 	text-align: center;
+	clear: both;
 
 	p {
 		margin-bottom: 0;

@@ -22,7 +22,6 @@ body {
 	position: relative;
 	min-height: 100%;
 	padding-bottom: 75px;
-	padding-top: 75px;
 }
 
 a {
@@ -49,16 +48,14 @@ h6 {
 }
 
 .nav {
-	background: white;
-	border-bottom: 4px solid $grey;
+	text-align: center;
 	width: 100%;
-	margin: 0 auto;
-	position: fixed;
 	top: 0;
+	padding: 30px 0;
 
 	ul {
-		text-align: right;
 		margin: 0;
+		padding: 0;
 
 		li {
 			display: inline-block;
@@ -69,7 +66,7 @@ h6 {
 				display: block;
 				padding: 10px 30px;
 				text-decoration: none;
-				font-size: 1.5em;
+				font-size: 1.2em;
 				font-family: $heading-font-stack;
 			}
 

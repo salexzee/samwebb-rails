@@ -105,45 +105,6 @@ h6 {
 	font-size: 1.8em;
 }
 
-.footer {
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-	background: $black;
-	padding: 20px 0;
-	color: #777;
-	text-align: center;
-	clear: both;
-
-	p {
-		margin-bottom: 0;
-		margin-top: 0;
-		font-size: .8em;
-		display: inline-block;
-	}
-
-	ul {
-		margin: 0;
-		list-style: none;
-		display: inline-block;
-		padding-left: 0;
-
-		li {
-			display: inline-block;
-			margin-left: 10px;
-
-			a {
-				color: #777;
-				text-decoration: none;
-			}
-
-			a:hover {
-				color: #b22;
-			}
-		}
-	}
-}
-
 @media (max-width: 800px) {
 	body {
 		font-size: .6em;

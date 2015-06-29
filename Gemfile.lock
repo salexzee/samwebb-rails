@@ -193,3 +193,6 @@ DEPENDENCIES
   sqlite3
   turbolinks
   uglifier
+
+BUNDLED WITH
+   1.10.4

@@ -1,4 +1,11 @@
 <div class="container">
-	<p class="index-blog-date ruby">June 30, 2015</p>
-	<p class="index-blog-title"><a href="#">How to install Ruby. From scratch!</a></p>
+	<% if @articles.empty? == false %>
+		<p class="index-blog-date ruby">June 30, 2015</p>
+		<p class="index-blog-title"><a href="#">How to install Ruby. From scratch!</a></p><br>
+	<% end %>
+
+	<% cts_blogs.each do |post| %>
+		<p class="index-blog-date ruby"><%= post[2] %></p>
+		<p class="index-blog-title"><a href="<%= post[1] %>" target="_blank"><%= post[0] %>(CTS)</a></p><br>
+	<% end %>
 </div>

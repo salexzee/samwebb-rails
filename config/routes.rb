@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
+  root 'articles#index'
 
-  get 'article/index'
+  resources :article
 
-  root 'pages#index'
   get 'pages/portfolio'
 
 end

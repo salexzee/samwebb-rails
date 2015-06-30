@@ -30,3 +30,13 @@ to discover who I am, what I am capable of and what I can do for them.
 1. Projects
 2. Contact
 3. Mild bio
+
+-----------------------
+
+##Features
+
+*What features does this site need?*
+
+- Home page will be where all the blog posts live
+- There will be a projects page to show what I've worked on and am currently working on
+- Contact page

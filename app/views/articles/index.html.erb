@@ -1,7 +1,9 @@
 <div class="container">
 	<% if @articles.empty? == false %>
-		<p class="index-blog-date ruby">June 30, 2015</p>
-		<p class="index-blog-title"><a href="#">How to install Ruby. From scratch!</a></p><br>
+		<% @articles.each do |article| %>
+			<p class="index-blog-date ruby"><%= article.created_at %></p>
+			<p class="index-blog-title"><a href="#">How to install Ruby. From scratch!</a></p><br>
+		<% end %>
 	<% end %>
 
 	<% cts_blogs.each do |post| %>

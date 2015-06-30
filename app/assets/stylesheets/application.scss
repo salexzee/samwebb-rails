@@ -3,7 +3,6 @@
  *= require_self
 */
 
-@import 'social';
 @import 'variables';
 
 html {
@@ -74,36 +73,39 @@ h6 {
 				color: $black;
 			}
 
-			.nav-item,
-			.header-icon {
+			.nav-item {
 				transition: .7s;
-			}
-
-			.header-icon:hover {
-				color: $ruby-red;
-				margin-right: 0;
 			}
 		}
 	}
 }
 
-.pages-header {
+.index-blog-date,
+.index-blog-title {
 	text-align: center;
-
-	h1 {
-		font-size: 5em;
-		margin-bottom: 0;
-	}
-
-	h3 {
-		font-size: 2.5em;
-		margin-top: 0;
-	}
+	margin: 0;
+	padding: 0;
 }
 
-.main-content p {
-	font-size: 1.8em;
+.index-blog-date {
+	font-size: 1.3em;
 }
+
+.index-blog-title {
+	font-size: 1.5em;
+}
+
+.index-blog-title a {
+	text-decoration: none;
+	color: darken($grey, 20);
+	transition: .7s;
+}
+
+.index-blog-title a:hover {
+	color: darken($grey, 50);
+}
+
+
 
 @media (max-width: 800px) {
 	body {
@@ -134,12 +136,6 @@ h6 {
 			li:hover {
 				background: $light-grey;
 			}
-		}
-	}
-
-	.portfolio {
-		.portfolio-block {
-			width: 44%;
 		}
 	}
 }

@@ -5,26 +5,18 @@
 
 @import 'variables';
 
-html {
-	height: 100%;
-}
-
 html,
 body {
+	height: 100%;
+	width: 100%;
 	position: relative;
+	margin: 0;
+	padding: 0;
 }
 
 body {
-	margin: 0;
 	color: $black;
 	font-family: $primary-font-stack;
-	position: relative;
-	min-height: 100%;
-	padding-bottom: 75px;
-}
-
-a {
-	color: $black
 }
 
 h1,

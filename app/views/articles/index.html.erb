@@ -1,8 +1,8 @@
 <div class="container">
 	<% if @articles.empty? == false %>
 		<% @articles.each do |article| %>
-			<p class="index-blog-date ruby"><%= article.created_at %></p>
-			<p class="index-blog-title"><a href="#">How to install Ruby. From scratch!</a></p><br>
+			<p class="index-blog-date ruby"><%= format_time(article.created_at) %></p>
+			<p class="index-blog-title"><%= link_to article.title, article_path(article.id) %></p><br>
 		<% end %>
 	<% end %>
 

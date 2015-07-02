@@ -10,8 +10,10 @@
 <body>
 	<nav class="nav">
 		<ul>
-			<li><%= link_to "@samthewebb", "https://twitter.com/SamTheWebb", class: 'nav-item' %></li>
+			<li><%= link_to "@samthewebb", "https://twitter.com/SamTheWebb", class: 'nav-item', target: '_blank' %></li>
 			<li><%= link_to "Home", root_path, class: 'nav-item' %></li>
 			<li><%= link_to "Projects", pages_portfolio_path, class: 'nav-item' %></li>
 		</ul>
 	</nav>
+	<p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>

@@ -52,7 +52,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.9.1.1)
-    devise (3.4.1)
+    devise (3.5.1)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
       railties (>= 3.2.6, < 5)
@@ -178,7 +178,7 @@ DEPENDENCIES
   autoprefixer-rails
   bootstrap-sass
   coffee-rails
-  devise
+  devise (~> 3.5.1)
   jbuilder
   jquery-rails
   mail_form

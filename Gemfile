@@ -11,10 +11,10 @@ gem 'turbolinks'
 gem 'jbuilder'
 gem 'bootstrap-sass'
 gem 'autoprefixer-rails'
-gem 'devise'
 gem 'rspec'
 gem 'mail_form'
 gem 'simple_form'
+gem 'devise', '~> 3.5.1'
 
 
 group :doc do

@@ -6,8 +6,11 @@
 		<% end %>
 	<% end %>
 
+	<% td_blogs.each do |post| %>
+		<%= external_post_format(post, "TD") %>
+	<% end %>
+
 	<% cts_blogs.each do |post| %>
-		<p class="index-blog-date ruby"><%= post[2] %></p>
-		<p class="index-blog-title"><a href="<%= post[1] %>" target="_blank"><%= post[0] %>(CTS)</a></p><br>
+		<%= external_post_format(post, "CTS") %>
 	<% end %>
 </div>

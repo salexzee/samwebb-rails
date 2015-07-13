@@ -4,6 +4,6 @@ Rails.application.routes.draw do
 
   resources :articles
 
-  get 'pages/portfolio'
+  get 'pages/projects'
 
 end

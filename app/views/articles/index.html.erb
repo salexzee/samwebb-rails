@@ -1,10 +1,12 @@
 <div class="container">
+	<!--
 	<% if @articles.empty? == false %>
 		<% @articles.each do |article| %>
 			<p class="index-blog-date ruby"><%= format_time(article.created_at) %></p>
 			<p class="index-blog-title"><%= link_to article.title, article_path(article.id) %></p><br>
 		<% end %>
 	<% end %>
+-->
 
 	<% td_blogs.each do |post| %>
 		<%= external_post_format(post, "TD") %>

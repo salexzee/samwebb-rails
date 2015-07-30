@@ -1,4 +1,8 @@
 <div class="container">
+	<p class="title-text">Crafting the <span class="ruby">world</span> of tomorrow through <span class="ruby">code</span>.</p>
+</div>
+
+<div class="container">
 	<% td_blogs.each do |post| %>
 		<%= external_post_format(post, "TD") %>
 	<% end %>
@@ -6,4 +10,5 @@
 	<% cts_blogs.each do |post| %>
 		<%= external_post_format(post, "CTS") %>
 	<% end %>
+	
 </div>

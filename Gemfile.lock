@@ -45,6 +45,13 @@ GEM
       autoprefixer-rails (>= 5.0.0.1)
       sass (>= 3.2.19)
     builder (3.2.2)
+    ckeditor (4.1.4)
+      cocaine
+      orm_adapter (~> 0.5.0)
+    climate_control (0.0.3)
+      activesupport (>= 3.0)
+    cocaine (0.5.7)
+      climate_control (>= 0.0.3, < 1.0)
     coffee-rails (4.1.0)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0, < 5.0)
@@ -81,12 +88,19 @@ GEM
       actionmailer (>= 3.2, < 5)
       activemodel (>= 3.2, < 5)
     mime-types (2.4.3)
+    mimemagic (0.3.0)
     mini_portile (0.6.2)
     minitest (5.6.0)
     multi_json (1.11.0)
     nokogiri (1.6.6.2)
       mini_portile (~> 0.6.0)
     orm_adapter (0.5.0)
+    paperclip (4.3.1)
+      activemodel (>= 3.2.0)
+      activesupport (>= 3.2.0)
+      cocaine (~> 0.5.5)
+      mime-types
+      mimemagic (= 0.3.0)
     pg (0.18.1)
     rack (1.6.0)
     rack-test (0.6.3)
@@ -177,11 +191,13 @@ PLATFORMS
 DEPENDENCIES
   autoprefixer-rails
   bootstrap-sass
+  ckeditor
   coffee-rails
   devise (~> 3.5.1)
   jbuilder
   jquery-rails
   mail_form
+  paperclip
   pg
   rails
   rails_12factor

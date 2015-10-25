@@ -1,13 +1,11 @@
+<br>
+
 <%= form_for :article, url: articles_path do |f| %>
-  <p>
-    <%= f.label :title %><br>
-    <%= f.text_field :title %>
-  </p>
- 
-  <p>
-    <%= f.label :text %><br>
-    <%= f.text_area :text %>
-  </p>
+
+
+  <%= f.text_field :title, class: "title" %>
+
+  <%= f.cktext_area :text, class: "ckeditor" %>
  
   <p>
     <%= f.submit %>

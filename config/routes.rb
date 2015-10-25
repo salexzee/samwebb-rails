@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
+  mount Ckeditor::Engine => '/ckeditor'
   devise_for :admins, :skip => :registrations
 
-  authenticate :admins do
+  authenticate :admin do
     resources :articles, only: [:new, :create, :edit, :update, :destroy]
   end
 

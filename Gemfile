@@ -15,6 +15,8 @@ gem 'rspec'
 gem 'mail_form'
 gem 'simple_form'
 gem 'devise', '~> 3.5.1'
+gem 'ckeditor'
+gem 'paperclip'
 
 
 group :doc do

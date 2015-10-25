@@ -13,4 +13,14 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require ckeditor/init
 //= require_tree .
+
+$('.ckeditor').ckeditor({
+  // optional config
+});
+
+$('textarea.ckeditor').each(function () {
+   var $textarea = $(this);
+   $textarea.val(CKEDITOR.instances[$textarea.attr('name')].getData());
+});

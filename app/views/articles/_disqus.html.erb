@@ -1,0 +1,21 @@
+<div id="disqus_thread"></div>
+<script>
+    /**
+     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    */
+
+    var disqus_shortname = 'samwebb'; // Required - Replace example with your forum shortname
+    var disqus_identifier = '<%= @article.id %>';
+    var disqus_title = '<%= @article.title %>';
+    var disqus_url = '<%= url_for([@article, {only_path: false}]) %>';
+
+    (function() {  // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        
+        s.src = '//samwebb.disqus.com/embed.js';
+        
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>

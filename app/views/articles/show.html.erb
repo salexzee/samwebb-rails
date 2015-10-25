@@ -2,4 +2,6 @@
 	<h1><%= @article.title %></h1>
 	<h4><%= format_time(@article.created_at) %></h4>
 	<p><%= raw @article.text %></p>
+
+  <%= render 'disqus' %>
 </div>

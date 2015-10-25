@@ -29,9 +29,41 @@ h6 {
 	margin: 0;
 }
 
+.user-top-bar {
+	background: black;
+	opacity: .5;
+	top: 0;
+	left: 0;
+	color: white;
+	position: fixed;
+	border-radius: 0 0 5px 0;
+
+	a {
+		color: white;
+		text-decoration: none;
+	}
+
+	a:hover {
+		color: #ddd;
+	}
+	p {
+		display: inline-block;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+}
+
 .container {
 	width: 80%;
 	margin: 0 auto;
+}
+
+.notice,
+.alert {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	opacity: .5;
 }
 
 .ruby {

@@ -6,3 +6,19 @@
   margin-bottom: 10px;
   font-size: 2em;
 }
+
+.post-container {
+  width: 60%;
+  margin: 0 auto;
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.submit {
+  input[type="submit"] {
+    font-size: 5em;
+  }
+}

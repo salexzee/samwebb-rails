@@ -15,3 +15,6 @@
 /log/*
 !/log/.keep
 /tmp
+
+# Ignores the rough drafts for blog posts
+_blogposts

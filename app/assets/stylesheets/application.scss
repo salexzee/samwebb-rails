@@ -73,6 +73,39 @@ h6 {
 	color: red;
 }
 
+.title {
+  margin-bottom: 10px;
+  font-size: 2em;
+}
+
+.post-container {
+  width: 60%;
+  margin: 0 auto;
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  a {
+    color: $ruby-red;
+  }
+}
+
+.submit {
+  input[type="submit"] {
+    font-size: 5em;
+  }
+}
+
+code {
+  background: #fafafa;
+  color: #888;
+  padding: 1px 5px;
+  border: 1px solid #ddd;
+  border-radius: 1px;
+}
+
 .back-link {
 	text-decoration: none;
 }

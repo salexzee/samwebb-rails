@@ -17,6 +17,7 @@ gem 'simple_form'
 gem 'devise', '~> 3.5.1'
 gem 'ckeditor'
 gem 'paperclip'
+gem 'friendly_id', '~> 5.1'
 
 
 group :doc do

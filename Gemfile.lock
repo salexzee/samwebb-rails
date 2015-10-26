@@ -69,6 +69,8 @@ GEM
     diff-lcs (1.2.5)
     erubis (2.7.0)
     execjs (2.5.2)
+    friendly_id (5.1.0)
+      activerecord (>= 4.0.0)
     globalid (0.3.5)
       activesupport (>= 4.1.0)
     i18n (0.7.0)
@@ -194,6 +196,7 @@ DEPENDENCIES
   ckeditor
   coffee-rails
   devise (~> 3.5.1)
+  friendly_id (~> 5.1)
   jbuilder
   jquery-rails
   mail_form

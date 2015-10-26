@@ -20,7 +20,7 @@ class ArticlesController < ApplicationController
   end
 
   def show
-    @article = Article.find(params[:id])
+    @article = Article.friendly.find(params[:id])
   end
 
   def destroy
@@ -29,6 +29,6 @@ class ArticlesController < ApplicationController
   private
 
   def article_params
-    params.require(:article).permit(:title, :text)
+    params.require(:article).permit(:title, :text, :slug)
   end
 end

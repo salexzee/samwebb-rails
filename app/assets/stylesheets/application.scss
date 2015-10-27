@@ -199,12 +199,16 @@ code {
 
 	input:-webkit-autofill {
 		-webkit-box-shadow: 0 0 0px 1000px white inset;
-		-webkit-text-fill-color: yellow !important;
+		-webkit-text-fill-color: #888 !important;
 	}
 
 	.admin_password {
 		input {
 			color: $ruby-red;
+		}
+
+		input:-webkit-autofill {
+			-webkit-text-fill-color: $ruby-red !important;
 		}
 	}
 }

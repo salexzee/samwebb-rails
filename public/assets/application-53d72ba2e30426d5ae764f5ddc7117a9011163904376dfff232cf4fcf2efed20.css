@@ -232,18 +232,22 @@ code {
 /* line 201, /Users/Salex/Documents/projects/samwebb/app/assets/stylesheets/application.scss */
 .form-inputs input:-webkit-autofill {
   -webkit-box-shadow: 0 0 0px 1000px white inset;
-  -webkit-text-fill-color: yellow !important;
+  -webkit-text-fill-color: #888 !important;
 }
 /* line 207, /Users/Salex/Documents/projects/samwebb/app/assets/stylesheets/application.scss */
 .form-inputs .admin_password input {
   color: #b22;
 }
+/* line 211, /Users/Salex/Documents/projects/samwebb/app/assets/stylesheets/application.scss */
+.form-inputs .admin_password input:-webkit-autofill {
+  -webkit-text-fill-color: #b22 !important;
+}
 
-/* line 213, /Users/Salex/Documents/projects/samwebb/app/assets/stylesheets/application.scss */
+/* line 217, /Users/Salex/Documents/projects/samwebb/app/assets/stylesheets/application.scss */
 .form-actions {
   text-align: center;
 }
-/* line 215, /Users/Salex/Documents/projects/samwebb/app/assets/stylesheets/application.scss */
+/* line 219, /Users/Salex/Documents/projects/samwebb/app/assets/stylesheets/application.scss */
 .form-actions .btn {
   font-size: 2.5em;
   -webkit-appearance: initial;
@@ -257,7 +261,7 @@ code {
   -webkit-transition: .5s;
           transition: .5s;
 }
-/* line 228, /Users/Salex/Documents/projects/samwebb/app/assets/stylesheets/application.scss */
+/* line 232, /Users/Salex/Documents/projects/samwebb/app/assets/stylesheets/application.scss */
 .form-actions .btn:hover {
   color: #333;
   cursor: pointer;
@@ -266,37 +270,37 @@ code {
 }
 
 @media (max-width: 800px) {
-  /* line 241, /Users/Salex/Documents/projects/samwebb/app/assets/stylesheets/application.scss */
+  /* line 245, /Users/Salex/Documents/projects/samwebb/app/assets/stylesheets/application.scss */
   body {
     font-size: .6em;
   }
 
-  /* line 245, /Users/Salex/Documents/projects/samwebb/app/assets/stylesheets/application.scss */
+  /* line 249, /Users/Salex/Documents/projects/samwebb/app/assets/stylesheets/application.scss */
   .nav {
     border-bottom: none;
     width: 100%;
     margin-left: 0;
     padding: 0;
   }
-  /* line 251, /Users/Salex/Documents/projects/samwebb/app/assets/stylesheets/application.scss */
+  /* line 255, /Users/Salex/Documents/projects/samwebb/app/assets/stylesheets/application.scss */
   .nav ul {
     width: 100%;
     text-indent: none;
     -webkit-padding-start: 0;
     margin-top: 0;
   }
-  /* line 257, /Users/Salex/Documents/projects/samwebb/app/assets/stylesheets/application.scss */
+  /* line 261, /Users/Salex/Documents/projects/samwebb/app/assets/stylesheets/application.scss */
   .nav ul li {
     display: block;
     width: 100%;
     border-bottom: 1px solid #999;
   }
-  /* line 262, /Users/Salex/Documents/projects/samwebb/app/assets/stylesheets/application.scss */
+  /* line 266, /Users/Salex/Documents/projects/samwebb/app/assets/stylesheets/application.scss */
   .nav ul li a {
     padding: 10px 0;
     display: block;
   }
-  /* line 267, /Users/Salex/Documents/projects/samwebb/app/assets/stylesheets/application.scss */
+  /* line 271, /Users/Salex/Documents/projects/samwebb/app/assets/stylesheets/application.scss */
   .nav ul li:hover {
     background: #eaeaea;
   }

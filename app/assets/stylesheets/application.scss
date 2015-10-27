@@ -59,7 +59,7 @@ h6 {
 
 .notice,
 .alert {
-	position: absolute;
+	position: fixed;
 	bottom: 5px;
 	right: 5px;
 	opacity: .5;
@@ -179,6 +179,55 @@ code {
 .index-blog-title a:hover {
 	color: darken($grey, 50);
 }
+
+.form-inputs {
+	margin-top: 100px;
+
+	input {
+		width: 100%;
+		font-size: 2.5em;
+		margin-bottom: 25px;
+		text-align: center;
+		border-radius: 5px;
+		border: 1px solid #aaa;
+		color: #888;
+	}
+
+	input:focus {
+		outline: none;
+	}
+
+	.admin_password {
+		input {
+			color: $ruby-red;
+		}
+	}
+}
+
+.form-actions {
+	text-align: center;
+	.btn {
+		font-size: 2.5em;
+		-webkit-appearance: initial;
+		background: white;
+		padding: 10px 40px;
+		border: 1px solid #aaa;
+		background: white;
+		border-radius: 5px;
+		width: 50%;
+		color: #888;
+		transition: .5s;
+	}
+
+	.btn:hover {
+		color: #333;
+		cursor: pointer;
+		border-color: #333;
+		background: $light-grey;
+	}
+}
+
+
 
 
 

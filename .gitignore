@@ -18,3 +18,5 @@
 
 # Ignores the rough drafts for blog posts
 _blogposts
+
+public/assets/**

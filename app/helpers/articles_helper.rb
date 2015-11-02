@@ -1,14 +1,16 @@
 module ArticlesHelper
 	# Blog formats [Title, URL, Date]
-
+	# Depricated
 	def td_blogs
 		[["3 Reasons CoffeeScript is Better!","http://www.tribaldev.io/posts/3","May 10, 2015"], ["JavaScript Random Letter Generator in 6 Lines of Code","http://www.tribaldev.io/posts/2","May 1, 2015"]]
 	end
 
+	# Depricated
 	def cts_blogs
 		[["5 Amazing Websites", "http://codingtestsite.com/blogs/5-amazing-websites.php", "Nov 15, 2014"], ["Show and Hide using jQuery", "http://codingtestsite.com/blogs/hide-show-text.php", "Nov 1, 2014"]]
 	end
 
+	# Depricated
 	def external_post_format(post, site_abbr)
 		str = ""
 		str += '<p class="index-blog-date ruby">'

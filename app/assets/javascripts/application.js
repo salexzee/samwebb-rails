@@ -16,10 +16,12 @@
 //= require ckeditor/init
 //= require_tree .
 
+// Initiaizes ckeditor
 $('.ckeditor').ckeditor({
   // optional config
 });
 
+// Creates the ckeditor text area
 $('textarea.ckeditor').each(function () {
    var $textarea = $(this);
    $textarea.val(CKEDITOR.instances[$textarea.attr('name')].getData());

@@ -1,5 +1,11 @@
 <div class="post-container">
-  <p><%= link_to '< Back', root_path, class: 'back-link ruby' %></p>
+  <p>
+    <%= link_to '< Back', root_path, class: 'back-link ruby' %>
+    <% if admin_signed_in? %>
+      <%= link_to 'Edit', edit_article_path(@article), class: 'back-link ruby' %>
+      <%= link_to 'Delete', @article, method: :delete, :confirm => 'Delete?', class: 'back-link ruby' %>
+    <% end %>
+  </p>
 	<h1><%= @article.title %></h1>
 	<h4><%= format_time(@article.created_at) %></h4>
 	<p><%= raw @article.text %></p>

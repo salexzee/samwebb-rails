@@ -28,16 +28,10 @@ class ArticlesController < ApplicationController
   def update
     @article = find
 
-    respond_to do |format|
-      if @article.update_attributes(params[:id])
-        flash[:notice] = 'Post was successfully updated.'
-        format.html { redirect_to(@article) }
-        format.xml  { head :ok }
-      else
-        format.html { render :action => "edit" }
-        format.xml  { render :xml => @article.errors,
-                    :status => :unprocessable_entity }
-      end
+    if @article.update(article_params)
+      redirect_to @article
+    else
+      render 'edit'
     end
   end
 

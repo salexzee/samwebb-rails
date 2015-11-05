@@ -80,5 +80,7 @@ Rails.application.configure do
   # Required for Devise
   #config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
 
+  # Files to precompile
+  # config.assets.precompile = ['*.js', '*.css', '*.css.erb']
   config.assets.precompile += ['ckeditor/*']
 end

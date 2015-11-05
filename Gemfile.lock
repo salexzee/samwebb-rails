@@ -193,7 +193,7 @@ PLATFORMS
 DEPENDENCIES
   autoprefixer-rails
   bootstrap-sass
-  ckeditor
+  ckeditor (~> 4.1, >= 4.1.4)
   coffee-rails
   devise (~> 3.5.1)
   friendly_id (~> 5.1)

@@ -15,7 +15,7 @@ gem 'rspec'
 gem 'mail_form'
 gem 'simple_form'
 gem 'devise', '~> 3.5.1'
-gem 'ckeditor'
+gem 'ckeditor', '~> 4.1', '>= 4.1.4'
 gem 'paperclip'
 gem 'friendly_id', '~> 5.1'
 

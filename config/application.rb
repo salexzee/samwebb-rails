@@ -25,5 +25,10 @@ module Samwebb
 
     # Serves assets
     config.serve_static_files = true
+
+    config.assets.enabled = true
+    config.assets.precompile += Ckeditor.assets
+    config.autoload_paths += %W(#{config.root}/app/models/ckeditor)
+    config.assets.precompile += %w(ckeditor/*)
   end
 end

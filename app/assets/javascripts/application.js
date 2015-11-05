@@ -17,8 +17,6 @@
 //= require ckeditor/plugins/codesnippet/lib/highlight/highlight.pack
 //= require_tree .
 
-// Initiaizes ckeditor
-
 
 // Creates the ckeditor text area
 $('textarea.ckeditor').each(function () {
@@ -26,4 +24,5 @@ $('textarea.ckeditor').each(function () {
    $textarea.val(CKEDITOR.instances[$textarea.attr('name')].getData());
 });
 
+// Initializes highlighting on article pages
 hljs.initHighlightingOnLoad();

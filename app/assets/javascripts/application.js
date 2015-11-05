@@ -25,7 +25,6 @@ $('textarea.ckeditor').each(function () {
 
 // Initializes highlighting on article pages
 $(window).load(function(){
-  console.warn('Check runtime.');
   $('pre code').each(function(i, block) {
     hljs.highlightBlock(block);
   });

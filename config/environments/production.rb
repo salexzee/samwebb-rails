@@ -29,7 +29,7 @@ Rails.application.configure do
   # config.assets.css_compressor = :sass
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
-  config.assets.compile = true
+  config.assets.compile = false
 
   # Asset digests allow you to set far-future HTTP expiration dates on all assets,
   # yet still be able to expire them through the digest params.
@@ -81,6 +81,5 @@ Rails.application.configure do
   #config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
 
   # Files to precompile
-  config.assets.precompile = ['*.js', '*.css', '*.css.erb']
   config.assets.precompile += ['ckeditor/*']
 end

@@ -14,7 +14,7 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require ckeditor/init
-//= require ckeditor/plugins/codesnippet/lib/highlight/highlight.pack
+//= require highlight.pack
 //= require_tree .
 
 

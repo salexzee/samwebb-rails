@@ -24,4 +24,8 @@ $('textarea.ckeditor').each(function () {
 });
 
 // Initializes highlighting on article pages
-hljs.initHighlightingOnLoad();
+$(window).load(function(){
+  $('pre code').each(function(i, block) {
+    hljs.highlightBlock(block);
+  });
+});

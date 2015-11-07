@@ -7,6 +7,7 @@ class ArticlesController < ApplicationController
   end
 
   def new
+    @article = Article.new
   end
 
   def create
@@ -14,10 +15,13 @@ class ArticlesController < ApplicationController
     @article = Article.new(article_params)
  
     # Saves the article
-    @article.save
-    # Redirects to the created article's show page after
-    # saving
-    redirect_to @article
+    if @article.save
+      # Redirects to the created article's show page after
+      # saving
+      redirect_to @article
+    else
+      render 'new'
+    end
   end
 
   def edit

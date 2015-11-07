@@ -27,7 +27,7 @@
     <%= f.cktext_area :text, class: "ckeditor" %>
    
     <p class="submit">
-      <%= f.submit %>
+      <%= f.submit "Update Article", data: { confirm: "Are you sure?" } %>
     </p>
   <% end %>
 

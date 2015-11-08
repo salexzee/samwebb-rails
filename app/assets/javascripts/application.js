@@ -16,6 +16,17 @@
 //= require ckeditor/init
 //= require_tree .
 
+// Title animation
+$(document).ready(function() {
+  var title;
+  if (title = document.getElementsByClassName('title-text')[0]) {
+    snabbt(title, 'attention', {
+      rotation: [0, 0, Math.PI/2],
+      springConstant: 1.9,
+      springDeceleration: 0.9,
+    });
+  }
+});
 
 // Creates the ckeditor text area
 $('textarea.ckeditor').each(function () {

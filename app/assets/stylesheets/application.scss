@@ -176,11 +176,12 @@ code {
 .index-blog-title a {
 	text-decoration: none;
 	color: darken($grey, 20);
-	transition: .7s;
+	transition: .5s;
 }
 
 .index-blog-title a:hover {
 	color: darken($grey, 50);
+	margin-left: 20px;
 }
 
 .form-inputs {

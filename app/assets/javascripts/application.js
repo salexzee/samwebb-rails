@@ -26,10 +26,6 @@ $(document).ready(function() {
       springDeceleration: 0.9,
     });
   }
-
-  if (ibt = document.getElementsByClassName('index-blog-title')) {
-    ibt.onmouseover = function(){};
-  }
 });
 
 // Creates the ckeditor text area

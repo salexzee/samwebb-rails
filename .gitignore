@@ -16,6 +16,6 @@
 !/log/.keep
 /tmp
 
-# Ignores the rough drafts for blog posts
-_blogposts
+# Ignores extras that aren't needed in GitHub, production or even testing
+extras
 

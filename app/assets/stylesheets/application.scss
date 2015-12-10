@@ -249,10 +249,19 @@ code {
 	width: 100%;
 	background: #454545;
 	color: #bbb;
-	padding: 50px 100px 25px 100px;
+	padding: 50px 0 25px 0;
 	position: absolute;
 	bottom: 0;
 	border-top: 5px solid $ruby-red;
+
+	.footer-section:first-child {
+		margin-left: 100px;
+	}
+
+	.footer-section:nth-child(3) {
+		margin-right: 100px;
+	}
+
 
 	.footer-section {
 		width: 20%;

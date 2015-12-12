@@ -19,17 +19,17 @@
     <%= format_time(@article.created_at) %>
   </h4>
 
-	<p>
-    <%= raw @article.text %>
-  </p>
-
   <% if @article.tag_list %>
-    <ul>
+    <ul id="show-tags">
       <% @article.tag_list.each do |tag| %>
-        <li> <%= tag %> </li>
+        <li><a href="#"> <%= tag %> </a></li>
       <% end %>
     </ul>
   <% end %>
+
+	<p>
+    <%= raw @article.text %>
+  </p>
 
   <p>
     <%= link_to '< Back', root_path, class: 'back-link ruby' %>

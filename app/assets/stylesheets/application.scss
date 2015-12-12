@@ -89,6 +89,37 @@ h6 {
 	margin-top: 10px;
 }
 
+#show-tags {
+	margin: 0;
+	padding: 0;
+
+	li {
+		list-style: none;
+		border: 1px solid #555;
+		display: inline-block;
+		border-radius: 5px 2px 5px 2px;
+		transition: border-color .3s;
+		margin-right: 5px;
+		margin-top: 10px;
+	}
+
+	li:hover {
+		border-color: $ruby-red;
+	}
+
+	li:hover a {
+		color: $ruby-red;
+	}
+
+	a {
+		color: #444;
+		text-decoration: none;
+		transition: color .3s;
+		padding: 4px 7px;
+		display: block;
+	}
+}
+
 .post-container {
   width: 60%;
   margin: 0 auto;

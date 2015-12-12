@@ -22,7 +22,7 @@
   <% if @article.tag_list %>
     <ul id="show-tags">
       <% @article.tag_list.each do |tag| %>
-        <li><a href="#"> <%= tag %> </a></li>
+        <li><a href="<%= root_path %>"> <%= tag %> </a></li>
       <% end %>
     </ul>
   <% end %>

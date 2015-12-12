@@ -25,6 +25,9 @@
     <%= f.text_field :title, class: "title" %>
 
     <%= f.cktext_area :text, class: "ckeditor" %>
+
+    <!-- Need to get commas between tags -->
+    <%= f.text_field :tag_list, class: "tag-adder" %> 
    
     <p class="submit">
       <%= f.submit "Update Article", data: { confirm: "Are you sure?" } %>

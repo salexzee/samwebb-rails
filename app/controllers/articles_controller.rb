@@ -61,7 +61,7 @@ class ArticlesController < ApplicationController
   def article_params
     # Sets the parameters for an article with a :slug for use
     # with friendly_id
-    params.require(:article).permit(:title, :text, :slug)
+    params.require(:article).permit(:title, :text, :slug, :tag_list)
   end
 
   def find

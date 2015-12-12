@@ -23,6 +23,14 @@
     <%= raw @article.text %>
   </p>
 
+  <% if @article.tag_list %>
+    <ul>
+      <% @article.tag_list.each do |tag| %>
+        <li> <%= tag %> </li>
+      <% end %>
+    </ul>
+  <% end %>
+
   <p>
     <%= link_to '< Back', root_path, class: 'back-link ruby' %>
   </p>

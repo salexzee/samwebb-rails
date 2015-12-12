@@ -313,6 +313,10 @@ code {
 		padding-bottom: 0;
 	}
 
+	.user-top-bar {
+		display: none;
+	}
+
 	.nav {
 		border-bottom: none;
 		width: 100%;
@@ -320,7 +324,7 @@ code {
 		padding: 0;
 
 		ul {
-			width: 100%;
+			 width: 100%;
 			text-indent: none;
 			-webkit-padding-start: 0;
 			margin-top: 0;
@@ -338,8 +342,8 @@ code {
 			li:hover {
 				background: $light-grey;
 			}
-		}
-	}
+		} 
+	} 
 
 	.footer {
 		display: none;

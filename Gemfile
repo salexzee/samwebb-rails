@@ -18,6 +18,7 @@ gem 'devise', '~> 3.5.1'
 gem 'ckeditor', '~> 4.1', '>= 4.1.4'
 gem 'paperclip'
 gem 'friendly_id', '~> 5.1'
+gem 'acts-as-taggable-on', '~> 3.4'
 
 
 group :doc do

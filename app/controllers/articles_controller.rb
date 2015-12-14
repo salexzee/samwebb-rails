@@ -1,9 +1,11 @@
 class ArticlesController < ApplicationController
 
   def index
-    # Returns all articles in descencing order based on
-    # their ID
-    @articles = Article.all.order("id DESC")
+    if (params[:tag])
+      @articles = Article.tagged_with(params[:tag]).order("id DESC")
+    else
+      @articles = Article.all.order("id DESC")
+    end
   end
 
   def new
@@ -68,4 +70,5 @@ class ArticlesController < ApplicationController
     # Finds articles, preventing duplication
     Article.friendly.find(params[:id])
   end
+
 end

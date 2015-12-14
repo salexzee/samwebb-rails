@@ -25,13 +25,12 @@
 
       <div class="footer-section">
         <h5>Blog Categories</h5>
-        <% most_tags = ActsAsTaggableOn::Tag.most_used(4) %>
+        <% most_tags = ActsAsTaggableOn::Tag.most_used(5) %>
         <% most_tags.each do |tag| %>
           <% if tag.taggings_count > 0 %>
-            <p><a href="<%= root_path %>"><%= tag.name %></a> - <span><%= tag.taggings_count %></span></p>
+            <p><a href="<%= articles_path(:tag => tag.name) %>"><%= tag.name %></a> - <span><%= tag.taggings_count %></span></p>
           <% end %>
         <% end %>
-        <p><a href="#">view all tags...</a></p>
       </div>
 
       <!-- Copyright section -->

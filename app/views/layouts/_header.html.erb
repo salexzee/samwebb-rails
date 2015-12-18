@@ -1,8 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Sam Webb</title>
+  <title>
+    <% if @article %>
+      Sam Webb | <%= @article.title %>
+    <% else %>
+      Sam Webb
+    <% end %>
+  </title>
   <meta charset="utf-8">
+  <% if @article %>
+    <meta name="description" content="<%= @article.title %>">
+  <% end %>
   <%= stylesheet_link_tag "//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/styles/dark.min.css" %>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>

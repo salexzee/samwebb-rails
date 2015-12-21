@@ -3,6 +3,7 @@ class PagesController < ApplicationController
 	def index
 	end
 
-	def projects
+	def tags
+    
 	end
 end

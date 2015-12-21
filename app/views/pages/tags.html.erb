@@ -1,8 +1,14 @@
-<header class="pages-header">
-	<h1>Sam Webb</h1>
-	<h3><span class="ruby">Ruby</span> Developer</h3>
+
+<header class="pages-header container">
+	<h1>All Tags</h1>
 </header>
 
 <section class="main-content container">
+
+<% ActsAsTaggableOn::Tag.all.each do |tag| %>
+  <% if tag.taggings_count > 0 %>
+    <li><%= link_to tag.name, articles_path(:tag => tag.name) %></li>
+  <% end %>
+<% end %>
 	
 </section>

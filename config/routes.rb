@@ -10,6 +10,6 @@ Rails.application.routes.draw do
 
   resources :articles
 
-  get 'pages/projects'
+  get 'pages/tags'
 
 end

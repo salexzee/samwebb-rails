@@ -317,11 +317,6 @@ code {
 		margin-left: 100px;
 	}
 
-	.footer-section:nth-child(3) {
-		margin-right: 100px;
-	}
-
-
 	.footer-section {
 		width: 20%;
 		display: inline-block;
@@ -366,6 +361,8 @@ code {
 /*****************/
 /* Media Queries */
 /*****************/
+
+//1063
 @media (max-width: 800px) {
 	body {
 		font-size: .6em;

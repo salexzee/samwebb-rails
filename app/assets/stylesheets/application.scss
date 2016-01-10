@@ -366,7 +366,7 @@ code {
 @media (max-width: 800px) {
 	body {
 		font-size: .6em;
-		padding-bottom: 100px;
+		padding-bottom: 0;
 		padding-top: 30px;
 	}
 
@@ -375,33 +375,47 @@ code {
 	}
 
 	.nav {
+		width: initial;
 		border-bottom: none;
-		width: 100%;
 		margin-left: 0;
+		margin-right: 10px;
 		padding: 0;
 		position: absolute;
-		bottom: 0;
-		top: initial;
+		right: 0;
+		top: 0;
+		text-align: center;
+		z-index: 100;
+
+		#hamburger {
+			font-size: 5em;
+			transition: .3s;
+			cursor: pointer;
+			padding: 0;
+		}
+
+		#hamburger:hover {
+			color: $ruby-red;
+		}
 
 		ul {
-			 width: 100%;
 			text-indent: none;
 			-webkit-padding-start: 0;
 			margin-top: 0;
+			background: white;
+			border: 3px solid $ruby-red;
+			display: none;
 
 			li {
-				display: block;
-				width: 100%;
-				border-top: 1px solid $grey;
-				background: #444;
+				display: inline;
 
 				a {
-					padding: 10px 0;
+					padding: 0 10px;
 					display: block;
+					color: black;
 				}
 			}
 			li:hover a {
-				color: white;
+				color: black;
 			}
 		} 
 	} 

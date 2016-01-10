@@ -28,6 +28,15 @@ $(document).ready(function() {
   }
 });
 
+$(document).ready(function() {
+  var $hamburger = $('#hamburger');
+  var $ul = $('.nav ul');
+
+  $hamburger.click(function(){
+    $ul.toggle('fast');
+  });
+});
+
 // Creates the ckeditor text area
 $('textarea.ckeditor').each(function () {
    var $textarea = $(this);

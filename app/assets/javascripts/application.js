@@ -32,6 +32,16 @@ $(document).ready(function() {
   var $hamburger = $('#hamburger');
   var $ul = $('.nav ul');
 
+  window.onresize = function() {
+    var width = $('body').width();
+
+    if (width > 800) {
+      $ul.show();
+    } else {
+      $ul.hide();
+    }
+  };
+
   $hamburger.click(function(){
     $ul.toggle('fast');
   });

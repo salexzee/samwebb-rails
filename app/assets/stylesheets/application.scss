@@ -183,6 +183,10 @@ code {
 	top: 0;
 	padding: 30px 0;
 
+	#hamburger {
+		display: none;
+	}
+
 	ul {
 		margin: 0;
 		padding: 0;
@@ -391,6 +395,8 @@ code {
 			transition: .3s;
 			cursor: pointer;
 			padding: 0;
+			display: inline;
+
 		}
 
 		#hamburger:hover {

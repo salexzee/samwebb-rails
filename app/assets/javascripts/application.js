@@ -28,6 +28,7 @@ $(document).ready(function() {
   }
 });
 
+// Hamburger menu
 $(document).ready(function() {
   var $hamburger = $('#hamburger');
   var $ul = $('.nav ul');

@@ -34,9 +34,9 @@
     <span id="hamburger">&equiv;</span>
 		<ul>
       <li><%= link_to "Home", root_path, class: 'nav-item' %></li>
-			<li><%= link_to "Projects", "#", class: 'nav-item', target: '_blank' %></li>
+			<li><%= link_to "Projects", home_projects_path, class: 'nav-item' %></li>
       <li><%= link_to "Blog", articles_path, class: 'nav-item' %></li>
-			<li><%= link_to "Contact", "#", class: 'nav-item', target: '_blank' %></li>
+			<li><%= link_to "Contact", home_contact_path, class: 'nav-item' %></li>
 		</ul>
 	</nav>
 	<p class="notice"><%= notice %></p>

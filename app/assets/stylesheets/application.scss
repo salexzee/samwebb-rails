@@ -30,6 +30,7 @@ body {
 	color: $black;
 	font-family: $primary-font-stack;
 	padding-bottom: 354px;
+	padding-top: 100px;
 }
 
 h1,
@@ -158,16 +159,6 @@ h6 {
   }
 }
 
-/*
-code {
-  background: #fafafa;
-  color: #888;
-  padding: 1px 5px;
-  border: 1px solid #ddd;
-  border-radius: 1px;
-}
-*/
-
 .back-link {
 	text-decoration: none;
 	margin-right: 10px;
@@ -178,34 +169,43 @@ code {
 }
 
 .nav {
-	text-align: center;
 	width: 100%;
+	position: absolute;
 	top: 0;
-	padding: 30px 0;
+	background: #454545;
+	border-bottom: 1px solid $ruby-red;
+	z-index: 1;
 
 	#hamburger {
 		display: none;
 	}
 
-	ul {
-		margin: 0;
-		padding: 0;
+	.current {
+		color: $ruby-red;
+	}
 
+	ul {
+		margin: 0 20px 0 0;
+		padding: 0;
+		display: inline-block;
+		float: right;
+		
 		li {
 			display: inline-block;
 			margin-right: -4px;
 
 			a {
-				color: $grey;
+				color: #dfdfdf;
 				display: block;
-				padding: 10px 30px;
+				padding: 10px 10px;
 				text-decoration: none;
-				font-size: 1.2em;
+				font-size: .75em;
 				font-family: $heading-font-stack;
 			}
 
 			a:hover {
 				color: $black;
+				background: #f1f1f1;
 			}
 
 			.nav-item {
@@ -301,34 +301,6 @@ code {
 		cursor: pointer;
 		border-color: #333;
 		background: $light-grey;
-	}
-}
-
-#resume {
-	#title_stack {
-		text-align: center;
-
-		h1 {
-			font-weight: 400;
-			color: $ruby-red;
-		}
-
-		h4 {
-			letter-spacing: .1em;
-			font-weight: 200;
-		}
-	}
-
-	.res_section {
-		h2 {
-			text-decoration: underline;
-			color: $ruby-red;
-		}
-
-		h3 {
-			margin-top: 10px;
-			color: #555;
-		}
 	}
 }
 

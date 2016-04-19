@@ -25,7 +25,8 @@
     <div class="user-top-bar">
       <p class="ruby" style="font-weight: bold;"><%= current_admin.name %>:</p>
       <p><%= link_to "Home", root_path %></p>
-      <p data-no-turbolinks><%= link_to 'New', new_article_path %></p>
+      <p><%= link_to "Add Project", career_projects_path %></p>
+      <p data-no-turbolinks><%= link_to 'New Article', new_article_path %></p>
       <p><%= link_to "Logout", destroy_admin_session_path, :method => :delete %>
     </div>
   <% end %>
@@ -33,10 +34,9 @@
     <span id="hamburger">&equiv;</span>
 		<ul>
       <li><%= link_to "Home", root_path, class: 'nav-item' %></li>
-			<li><%= link_to "@samthewebb", "https://twitter.com/SamTheWebb", class: 'nav-item', target: '_blank' %></li>
-			<li><%= link_to "GitHub", "https://github.com/salexzee", class: 'nav-item', target: '_blank' %></li>
-			<li><%= link_to "LinkedIn", "https://www.linkedin.com/in/sam-webb-42331698", class: 'nav-item', target: '_blank' %></li>
-			<li><%= link_to "Email", 'mailto:510samwebb@gmail.com?subject=Hey%20Sam!', class: 'nav-item'%></li>
+			<li><%= link_to "Projects", "#", class: 'nav-item', target: '_blank' %></li>
+      <li><%= link_to "Blog", articles_path, class: 'nav-item' %></li>
+			<li><%= link_to "Contact", "#", class: 'nav-item', target: '_blank' %></li>
 		</ul>
 	</nav>
 	<p class="notice"><%= notice %></p>

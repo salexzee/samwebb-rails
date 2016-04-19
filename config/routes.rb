@@ -6,10 +6,9 @@ Rails.application.routes.draw do
     resources :articles, only: [:new, :create, :edit, :update, :destroy]
   end
 
-  root 'articles#index'
+  root 'home#index'
 
+  get '/articles/index' => 'articles#index'
   resources :articles
-
-  get '/career/resume' => 'career#index'
 
 end

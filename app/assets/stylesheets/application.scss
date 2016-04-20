@@ -30,7 +30,6 @@ body {
 	color: $black;
 	font-family: $primary-font-stack;
 	padding-bottom: 354px;
-	padding-top: 100px;
 }
 
 h1,
@@ -96,6 +95,7 @@ h6 {
 }
 
 /***************/
+
 
 .title {
   margin-bottom: 10px;
@@ -172,8 +172,6 @@ h6 {
 	width: 100%;
 	position: absolute;
 	top: 0;
-	background: #454545;
-	border-bottom: 1px solid $ruby-red;
 	z-index: 1;
 
 	#hamburger {
@@ -195,7 +193,7 @@ h6 {
 			margin-right: -4px;
 
 			a {
-				color: #dfdfdf;
+				color: #cfcfcf;
 				display: block;
 				padding: 10px 10px;
 				text-decoration: none;
@@ -204,20 +202,91 @@ h6 {
 			}
 
 			a:hover {
-				color: $black;
-				background: #f1f1f1;
+				color: white;
 			}
 
 			.nav-item {
-				transition: .7s;
+				transition: .2s;
 			}
 		}
 	}
 }
 
+/*************/
+
+
+/*************/
+/* Home Page */
+/*************/
+#home-page {
+	header {
+		width: 100%;
+		min-height: 100vh;
+		background: #444 url("https://dl.dropboxusercontent.com/u/66359502/samwebbcom/images/static/my_mac_darken_1500w.jpg") no-repeat center center fixed;
+		-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	text-align: center;
+
+  	h1,
+  	a {
+  		color: white;
+  	}
+
+  	h1 {
+  		padding-top: 30%;
+  		padding-bottom: 10px;
+  		font-size: 5em;
+  		font-weight: 200;
+  	}
+
+  	a {
+  		text-decoration: none;
+  		border: 2px solid white;
+  		padding: 5px 10px;
+  		font-size: 1.4em;
+  		transition: .2s;
+  		margin: 0 15px;
+  	}
+
+  	a:hover {
+  		background: white;
+  		color: black;
+  	}
+	}
+
+	#intro {
+		background: #f1f1f1;
+		
+		h2 {
+			font-size: 1.4em;
+			font-weight: normal;
+			font-family: $stylish-font-stack;
+			padding-bottom: 0;
+		}
+		p {
+			font-size: 1.1em;
+			color: #555;
+			font-weight: 200;
+			font-family: 'Work Sans', sans-serif;
+		}
+	}
+
+	.home-section {
+		width: 50%;
+		padding: 80px 0;
+	}
+
+}
+
+/*************/
+
+
 .title-text {
 	text-align: center;
 	font-size: 2.2em;
+	padding-top: 100px;
 	margin-top: 0;
 	margin-bottom: 50px;
 }

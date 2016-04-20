@@ -3,7 +3,7 @@ class HomeController < ApplicationController
   def index
   end
 
-  def projects
+  def portfolio
   end
 
   def contact

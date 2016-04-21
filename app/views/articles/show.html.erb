@@ -1,7 +1,7 @@
 <div class="post-container">
 
   <p>
-    <%= link_to '< Back', root_path, class: 'back-link ruby' %>
+    <%= link_to '< Back', articles_path, class: 'back-link ruby' %>
 
     <% if admin_signed_in? %>
 
@@ -32,7 +32,7 @@
   </p>
 
   <p>
-    <%= link_to '< Back', root_path, class: 'back-link ruby' %>
+    <%= link_to '< Back', articles_path, class: 'back-link ruby' %>
   </p>
 
   <%= render 'disqus' %>

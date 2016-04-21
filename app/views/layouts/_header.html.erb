@@ -23,9 +23,7 @@
 <body>
   <% if admin_signed_in? %>
     <div class="user-top-bar">
-      <p class="ruby" style="font-weight: bold;"><%= current_admin.name %>:</p>
-      <p><%= link_to "Home", root_path %></p>
-      <p><%= link_to "Add Project", career_projects_path %></p>
+      <p style="font-weight: bold;"><%= current_admin.name %>:</p>
       <p data-no-turbolinks><%= link_to 'New Article', new_article_path %></p>
       <p><%= link_to "Logout", destroy_admin_session_path, :method => :delete %>
     </div>
@@ -34,7 +32,7 @@
     <img src="https://dl.dropboxusercontent.com/u/66359502/samwebbcom/images/static/logo_white.png" alt="logo" id="main-logo">
 		<ul>
       <li><%= link_to "Home", root_path, class: 'nav-item' %></li>
-      <li><%= link_to "About", '#', class: 'nav-item' %></li>
+      <li><%= link_to "About", home_about_path, class: 'nav-item' %></li>
 			<li><%= link_to "Portfolio", home_portfolio_path, class: 'nav-item' %></li>
       <li><%= link_to "Blog", articles_path, class: 'nav-item' %></li>
 			<li><%= link_to "Contact", home_contact_path, class: 'nav-item' %></li>

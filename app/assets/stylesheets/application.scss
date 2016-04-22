@@ -463,6 +463,28 @@ h6 {
   		font-weight: 200;
   	}
 	}
+
+	#blog-intro {
+		padding: 75px 0;
+		width: 100%;
+		background: steelblue;
+
+		p {
+			margin-top: 0;
+		}
+
+		#quote {
+			color: #ddd;
+			font-size: 1.4em;
+			font-family: 'Work Sans', sans-serif;
+		}
+
+		#attr {
+			color: #ddd;
+			font-size: 1.2em;
+		}
+	}
+
 	#article-list {
 		width: 75%;
 

@@ -3,8 +3,10 @@
     <div class="container">
       <h1>Web Developer</h1>
       <div class="call-to-action">
-        <%= link_to "Portfolio", home_portfolio_path %>
-        <%= link_to "Contact", home_contact_path %>
+        <%= link_to "My Work", home_portfolio_path %>
+        <%= mail_to "510samwebb@gmail.com" do %>
+          Hire Me
+        <% end %>
       </div>
     </div>
   </header>
@@ -12,9 +14,6 @@
     <section class="container home-section">
       <h2>As a Full Stack Web Developer...</h2>
       <p>My goal is to understand the problems you're facing and to work with you to solve them. The main way I do this is by using technologies including: HTML5, CSS3, JavaScript and Ruby on Rails to build small and large scale web applications.</p>
-      <div>
-       <%= link_to "About Me", home_about_path %>
-      </div>
     </section>
   </div>
 
@@ -27,7 +26,7 @@
     </div>
     
     <div id="more-projects">
-      <a href="#">All Projects</a>
+      <%= link_to "All Projects", home_portfolio_path %>
     </div>
     
   </section>

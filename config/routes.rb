@@ -10,8 +10,6 @@ Rails.application.routes.draw do
 
   get '/articles/index' => 'articles#index'
   resources :articles
-  get '/home/about' => 'home#about'
-  get '/home/contact' => 'home#contact'
   get '/home/portfolio' => 'home#portfolio'
 
 end

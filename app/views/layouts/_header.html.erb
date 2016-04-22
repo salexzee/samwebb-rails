@@ -32,10 +32,11 @@
     <img src="https://dl.dropboxusercontent.com/u/66359502/samwebbcom/images/static/logo_white.png" alt="logo" id="main-logo">
 		<ul>
       <li><%= link_to "Home", root_path, class: 'nav-item' %></li>
-      <li><%= link_to "About", home_about_path, class: 'nav-item' %></li>
 			<li><%= link_to "Portfolio", home_portfolio_path, class: 'nav-item' %></li>
       <li><%= link_to "Blog", articles_path, class: 'nav-item' %></li>
-			<li><%= link_to "Contact", home_contact_path, class: 'nav-item' %></li>
+			<li><%= mail_to "510samwebb@gmail.com", class: 'nav-item' do %>
+          Contact
+        <% end %></li>
 		</ul>
 	</nav>
 	<p class="notice"><%= notice %></p>

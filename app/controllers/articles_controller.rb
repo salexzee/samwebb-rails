@@ -3,6 +3,7 @@ class ArticlesController < ApplicationController
   def index
     if (params[:tag])
       @articles = Article.tagged_with(params[:tag]).order("id DESC")
+      @tag = params[:tag]
     else
       @articles = Article.all.order("id DESC")
     end

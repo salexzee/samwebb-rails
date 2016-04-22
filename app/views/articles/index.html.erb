@@ -1,11 +1,35 @@
-<div class="container">
-	<p class="title-text">Crafting the <span class="ruby">world</span> of tomorrow through <span class="ruby">code</span>.</p>
+<div id="blog-pages">
+  <header>
+    <div class="container">
+      <% if @tag %>
+        <h1><%= "#" + @tag.upcase %></h1>
+      <% else %>
+      <h1>Writer's Block</h1>
+      <% end %>
+    </div>
+  </header>
+
+  <div id="article-list">
+    <% @articles.each do |article| %>
+      <section class="main-page-post">
+        <div class="container">
+          <p class="post-date"><%= format_time(article.created_at) %></p>
+          <p class="post-title" data-no-turbolink><%= link_to article.title, article_path(article) %></p>
+        </div>
+      </section>
+  <% end %>
+  </div>
+
+  <aside id="tag-list">
+    <h4>Top 5 Tags</h4>
+    <ul>
+      <li><a href="#">First Tag</a></li>
+      <li><a href="#">Second Tag</a></li>
+    </ul>
+  </aside>
+
+
+
 </div>
 
-<div class="container">
-  <% @articles.each do |article| %>
-    <p class="index-blog-date ruby"><%= format_time(article.created_at) %></p>
-    <p class="index-blog-title" data-no-turbolink><%= link_to article.title, article_path(article) %></p>
-    <br>
-  <% end %>	
-</div>
+

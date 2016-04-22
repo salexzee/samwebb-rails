@@ -283,13 +283,15 @@ h6 {
 
 	#intro {
 		background: #f1f1f1;
+		background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAMUlEQVQIW2NkwAHu3r37nxGbHEhCWVmZEUMSJgHShCKJLIEiiS4Bl8QmAZbEJQGSBADLVRueXU+3QwAAAABJRU5ErkJggg==);
+		
 
 		section {
 			width: 50%;
 		}
 
 		p {
-			font-size: 1.1em;
+			font-size: 1.4em;
 			color: #555;
 			font-weight: 200;
 			font-family: 'Work Sans', sans-serif;
@@ -406,6 +408,7 @@ h6 {
 			width: 33%;
 			text-align: center;
 
+
 			a {
 					img {
 						width: 200px;
@@ -434,14 +437,84 @@ h6 {
 	}
 }
 
+/**************/
 
-.title-text {
-	text-align: center;
-	font-size: 2.2em;
-	padding-top: 150px;
-	margin-top: 0;
-	margin-bottom: 50px;
+
+/**************/
+/* Blog Pages */
+/**************/
+
+#blog-pages {
+	header {
+		width: 100%;
+		min-height: 100vh;
+		background: #444 url("https://dl.dropboxusercontent.com/u/66359502/samwebbcom/images/static/typewriter.jpg") no-repeat center center fixed;
+		-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	text-align: center;
+
+  	h1 {
+  		color: white;
+  		padding-top: 30%;
+  		padding-bottom: 30px;
+  		font-size: 5em;
+  		font-weight: 200;
+  	}
+	}
+	#article-list {
+		width: 75%;
+
+		.main-page-post {
+			margin-bottom: 25px;
+
+			p {
+				padding-top: 0;
+				margin: 0;
+			}
+
+			.post-date {
+				color: #888;
+			}
+
+			.post-title {
+				font-size: 1.7em;
+
+				a {
+					color: #333;
+				}
+			}
+		}
+	}
+
+	#tag-list {
+		width: 24%;
+		float: right;
+
+		h4 {
+			margin: 0;
+		}
+
+		ul {
+			padding-left: 0;
+
+			li {
+				list-style: none;
+			}
+		}
+	}
+
+	#article-list,
+	#tag-list {
+		display: inline-block;
+		margin-top: 50px;
+	}
 }
+
+
+
+
 
 .index-blog-date,
 .index-blog-title {
@@ -528,6 +601,8 @@ h6 {
 		background: $light-grey;
 	}
 }
+
+/*****************/
 
 
 /*****************/

@@ -378,7 +378,7 @@ h6 {
 /* Portfolio Page */
 /******************/
 
-#profile-page {
+#portfolio-page {
 	header {
 		width: 100%;
 		min-height: 100vh;
@@ -405,14 +405,23 @@ h6 {
 
 		.portfolio-img {
 			display: inline-block;
-			width: 33%;
+			width: 32%;
 			text-align: center;
-
+			margin-bottom: 20px;
 
 			a {
-					img {
-						width: 200px;
-						height: 200px;
+				img {
+					width: 200px;
+					height: 200px;
+					border: 2px solid white;
+					box-shadow: 0 0 10px steelblue;
+					transition: .2s;
+				}
+			}
+
+			a:hover {
+				img {
+					box-shadow: 0 0 25px steelblue;
 				}
 			}
 		}
@@ -523,6 +532,16 @@ h6 {
 
 			li {
 				list-style: none;
+
+				a {
+					text-decoration: none;
+					color: black;
+					transition: .2s;
+				}
+
+				a:hover {
+					color: steelblue;
+				}
 			}
 		}
 	}
@@ -686,6 +705,16 @@ h6 {
 /* Media Queries */
 /*****************/
 
+@media (max-width: 1000px) {
+	#portfolio-page {
+		#portfolio {
+			.portfolio-img {
+				width: 44%;
+			}
+		}
+	}
+}
+
 @media (max-width: 800px) {
 	body {
 		font-size: .6em;
@@ -716,6 +745,14 @@ h6 {
 				img:hover {
 					box-shadow: 1px 1px 15px #aaa;
 				}
+			}
+		}
+	}
+
+	#portfolio-page {
+		#portfolio {
+			.portfolio-img {
+				width: 100%;
 			}
 		}
 	}

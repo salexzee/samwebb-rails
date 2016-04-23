@@ -30,10 +30,14 @@
   </div>
 
   <aside id="tag-list">
-    <h4>Top 5 Tags</h4>
+    <h4>Top Tags</h4>
     <ul>
-      <li><a href="#">First Tag</a></li>
-      <li><a href="#">Second Tag</a></li>
+      <% most_tags = ActsAsTaggableOn::Tag.most_used(10) %>
+      <% most_tags.each do |tag| %>
+        <% if tag.taggings_count > 0 %>
+            <li><a href="<%= articles_path(:tag => tag.name) %>"><%= "#" + tag.name.upcase %></a></li>
+        <% end %>
+      <% end %>
     </ul>
   </aside>
 

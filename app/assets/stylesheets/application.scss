@@ -223,6 +223,10 @@ h6 {
 				text-decoration: none;
 				font-size: .75em;
 				font-family: $heading-font-stack;
+
+				.current {
+					color: white;
+				}
 			}
 
 			a:hover {

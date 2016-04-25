@@ -500,9 +500,23 @@ h6 {
 
 	#article-list {
 		width: 75%;
+		padding-top: 50px;
 
 		.main-page-post {
 			margin-bottom: 25px;
+
+			.post-container {
+				background: #f3f3f3;
+				width: 100%;
+				border: 1px solid #aaa;
+				box-shadow: 0 0 15px #ddd;
+				padding: 20px;
+				transition: .2s;
+			}
+
+			.post-container:hover {
+				box-shadow: 0 0 15px steelblue;
+			}
 
 			p {
 				padding-top: 0;
@@ -514,7 +528,7 @@ h6 {
 			}
 
 			.post-title {
-				font-size: 1.7em;
+				font-size: 1.5em;
 
 				a {
 					color: #333;
@@ -526,6 +540,7 @@ h6 {
 	#tag-list {
 		width: 24%;
 		float: right;
+		padding-top: 50px;
 
 		h4 {
 			margin: 0;
@@ -555,36 +570,6 @@ h6 {
 		display: inline-block;
 		margin-top: 50px;
 	}
-}
-
-
-
-
-
-.index-blog-date,
-.index-blog-title {
-	text-align: left;
-	margin: 0;
-	padding: 0;
-}
-
-.index-blog-date {
-	font-size: 1.3em;
-}
-
-.index-blog-title {
-	font-size: 1.5em;
-}
-
-.index-blog-title a {
-	text-decoration: none;
-	color: darken($grey, 20);
-	transition: .5s;
-}
-
-.index-blog-title a:hover {
-	color: darken($grey, 50);
-	margin-left: 20px;
 }
 
 .article-form {
@@ -779,6 +764,14 @@ h6 {
 			margin-top: 20px;
 			text-align: left;
 			width: 80%;
+		}
+	}
+}
+
+@media (max-width: 400px) {
+	#blog-pages {
+		#article-list{
+			width: 70%;
 		}
 	}
 }

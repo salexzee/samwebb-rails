@@ -21,25 +21,18 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <% if admin_signed_in? %>
-    <div class="user-top-bar">
-      <p style="font-weight: bold;"><%= current_admin.name %>:</p>
-      <p data-no-turbolinks><%= link_to 'New Article', new_article_path %></p>
-      <p><%= link_to "Logout", destroy_admin_session_path, :method => :delete %>
-    </div>
-  <% end %>
 	<nav class="nav">
     <img src="https://dl.dropboxusercontent.com/u/66359502/samwebbcom/images/static/logo_white.png" alt="logo" id="main-logo">
 		<ul>
       <li>
-        <% if current_page?(:controller => 'home', :action => 'index') %>
+        <% if current_page?('/') %>
           <%= link_to "Home", root_path, class: 'nav-item current' %>
         <% else %>
           <%= link_to "Home", root_path, class: 'nav-item' %>
         <% end %>
       </li>
 			<li>
-        <% if current_page?(:controller => 'home', :action => 'portfolio') %>
+        <% if current_page?('/home/portfolio') %>
           <%= link_to "Portfolio", home_portfolio_path, class: 'nav-item current' %>
         <% else %>
           <%= link_to "Portfolio", home_portfolio_path, class: 'nav-item' %>
@@ -57,6 +50,14 @@
           Contact
         <% end %>
       </li>
+      <% if admin_signed_in? %>
+        <li>
+          <%= link_to 'New Article', new_article_path %>
+        </li>
+        <li>
+          <%= link_to "Logout", destroy_admin_session_path, :method => :delete %>
+        </li>
+      <% end %>
 		</ul>
 	</nav>
 	<p class="notice"><%= notice %></p>

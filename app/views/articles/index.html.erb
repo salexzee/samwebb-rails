@@ -22,8 +22,10 @@
     <% @articles.each do |article| %>
       <section class="main-page-post">
         <div class="container">
-          <p class="post-date"><%= format_time(article.created_at) %></p>
-          <p class="post-title" data-no-turbolink><%= link_to article.title, article_path(article) %></p>
+          <div class="post-container">
+            <p class="post-date"><%= format_time(article.created_at) %></p>
+            <p class="post-title" data-no-turbolink><%= link_to article.title, article_path(article) %></p>
+          </div>
         </div>
       </section>
   <% end %>

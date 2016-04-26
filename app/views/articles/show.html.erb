@@ -1,40 +1,52 @@
-<div class="post-container">
+<div id="post-page">
 
-  <p>
-    <%= link_to '< Back', articles_path, class: 'back-link ruby' %>
+  <div id="post">
+    <div class="post-holder">
+      <p>
+        <% if admin_signed_in? %>
 
-    <% if admin_signed_in? %>
+          <%= link_to 'Edit', edit_article_path(@article), class: 'back-link ruby' %>
+          <%= link_to 'Delete', @article, method: :delete, :confirm => 'Delete?', class: 'back-link ruby' %>
 
-      <%= link_to 'Edit', edit_article_path(@article), class: 'back-link ruby' %>
-      <%= link_to 'Delete', @article, method: :delete, :confirm => 'Delete?', class: 'back-link ruby' %>
+        <% end %>
+      </p>
 
-    <% end %>
-  </p>
+    	<h1>
+        <%= @article.title %>
+      </h1>
 
-	<h1>
-    <%= @article.title %>
-  </h1>
+    	<h4>
+        <%= format_time(@article.created_at) %>
+      </h4>
 
-	<h4>
-    <%= format_time(@article.created_at) %>
-  </h4>
+      <% if @article.tag_list %>
+        <ul id="show-tags">
+          <% @article.tag_list.each do |tag| %>
+            <li><a href="<%= articles_path(:tag => tag) %>"> <%= tag %> </a></li>
+          <% end %>
+        </ul>
+      <% end %>
 
-  <% if @article.tag_list %>
-    <ul id="show-tags">
-      <% @article.tag_list.each do |tag| %>
-        <li><a href="<%= articles_path(:tag => tag) %>"> <%= tag %> </a></li>
+    	<p>
+        <%= raw @article.text %>
+      </p>
+    </div>
+  </div>
+
+  <aside id="tag-list">
+    <h4>Top Tags</h4>
+    <ul>
+      <% most_tags = ActsAsTaggableOn::Tag.most_used(10) %>
+      <% most_tags.each do |tag| %>
+        <% if tag.taggings_count > 0 %>
+            <li><a href="<%= articles_path(:tag => tag.name) %>"><%= "#" + tag.name.upcase %></a></li>
+        <% end %>
       <% end %>
     </ul>
-  <% end %>
+  </aside>
 
-	<p>
-    <%= raw @article.text %>
-  </p>
-
-  <p>
-    <%= link_to '< Back', articles_path, class: 'back-link ruby' %>
-  </p>
-
-  <%= render 'disqus' %>
+  <div id="disqus">
+    <%= render 'disqus' %>
+  </div>
 
 </div>

@@ -525,6 +525,11 @@ h6 {
 			margin-top: 50px;
 			margin-bottom: 100px;
 			box-shadow: 0 0 15px steelblue;
+			
+			img {
+				width: 350px;
+				max-width: 100%;
+			}
 
 			h1 {
 				color: #444;
@@ -741,6 +746,7 @@ h6 {
 @media (max-width: 800px) {
 	body {
 		font-size: .6em;
+		padding-bottom: 350px;
 	}
 
 	#home-page {
@@ -776,6 +782,14 @@ h6 {
 		#portfolio {
 			.portfolio-img {
 				width: 100%;
+			}
+		}
+	}
+
+	#post-page {
+		#post {
+			.post-holder {
+				width: 75%;
 			}
 		}
 	}

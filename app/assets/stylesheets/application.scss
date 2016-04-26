@@ -29,7 +29,7 @@ body {
 	min-height: 100%;
 	color: $black;
 	font-family: $primary-font-stack;
-	padding-bottom: 354px;
+	padding-bottom: 454px;
 }
 
 h1,
@@ -465,6 +465,7 @@ h6 {
 
 		h4 {
 			margin: 0;
+			text-decoration: underline;
 		}
 
 		ul {
@@ -472,15 +473,22 @@ h6 {
 
 			li {
 				list-style: none;
+				display: block;
+				margin-bottom: 5px;
 
 				a {
 					text-decoration: none;
 					color: black;
 					transition: .2s;
+					border: 1px solid black;
+					padding: 4px;
+					display: inline-block;
+					border-radius: 5px 0 5px 0;
 				}
 
 				a:hover {
 					color: steelblue;
+					border-color: steelblue;
 				}
 			}
 		}
@@ -567,6 +575,7 @@ h6 {
 
 		h4 {
 			margin: 0;
+			text-decoration: underline;
 		}
 
 		ul {
@@ -574,15 +583,22 @@ h6 {
 
 			li {
 				list-style: none;
+				display: block;
+				margin-bottom: 5px;
 
 				a {
 					text-decoration: none;
-					color: black;
+					color: #444;
 					transition: .2s;
+					border: 1px solid #444;
+					padding: 4px;
+					display: inline-block;
+					border-radius: 5px 0 5px 0;
 				}
 
 				a:hover {
 					color: steelblue;
+					border-color: steelblue;
 				}
 			}
 		}

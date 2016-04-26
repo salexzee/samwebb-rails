@@ -22,7 +22,7 @@
       <% if @article.tag_list %>
         <ul id="show-tags">
           <% @article.tag_list.each do |tag| %>
-            <li><a href="<%= articles_path(:tag => tag) %>"> <%= tag %> </a></li>
+            <li><a href="<%= articles_path(:tag => tag) %>"> <%= '#' + tag %> </a></li>
           <% end %>
         </ul>
       <% end %>
@@ -39,7 +39,7 @@
       <% most_tags = ActsAsTaggableOn::Tag.most_used(10) %>
       <% most_tags.each do |tag| %>
         <% if tag.taggings_count > 0 %>
-            <li><a href="<%= articles_path(:tag => tag.name) %>"><%= "#" + tag.name.upcase %></a></li>
+            <li><a href="<%= articles_path(:tag => tag.name) %>"><%= "#" + tag.name %></a></li>
         <% end %>
       <% end %>
     </ul>

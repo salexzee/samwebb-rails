@@ -456,6 +456,23 @@ h6 {
 				}
 			}
 		}
+		#pagination {
+			text-align: center;
+
+			.disabled,
+			.current {
+				color: #ccc;
+			}
+
+			a {
+				color: steelblue;
+				text-decoration: none;
+			}
+
+			a:hover {
+				text-decoration: underline;
+			}
+		}
 	}
 
 	#tag-list {

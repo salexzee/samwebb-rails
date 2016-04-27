@@ -2,10 +2,10 @@ class ArticlesController < ApplicationController
 
   def index
     if (params[:tag])
-      @articles = Article.tagged_with(params[:tag]).order("id DESC")
+      @articles = Article.tagged_with(params[:tag]).order("id DESC").paginate(:page => params[:page], :per_page => 10)
       @tag = params[:tag]
     else
-      @articles = Article.all.order("id DESC")
+      @articles = Article.all.order("id DESC").paginate(:page => params[:page], :per_page => 10)
     end
   end
 

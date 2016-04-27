@@ -28,7 +28,10 @@
           </div>
         </div>
       </section>
-  <% end %>
+    <% end %>
+    <div id="pagination">
+      <%= will_paginate @posts %>
+    </div>
   </div>
 
   <aside id="tag-list">

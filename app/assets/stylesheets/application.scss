@@ -556,6 +556,15 @@ h6 {
 				color: #888;
 			}
 
+			a {
+				color: steelblue;
+				text-decoration: none;
+			}
+
+			a:hover {
+				text-decoration: underline;
+			}
+
 			#show-tags {
 				margin: 0;
 				padding: 0;

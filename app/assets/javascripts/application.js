@@ -16,38 +16,6 @@
 //= require ckeditor/init
 //= require_tree .
 
-// Title animation
-$(document).ready(function() {
-  var title;
-  if (title = document.getElementsByClassName('title-text')[0]) {
-    snabbt(title, 'attention', {
-      rotation: [0, 0, Math.PI/5],
-      springConstant: 1.9,
-      springDeceleration: 0.9,
-    });
-  }
-});
-
-// Hamburger menu
-$(document).ready(function() {
-  var $hamburger = $('#hamburger');
-  var $ul = $('.nav ul');
-
-  window.onresize = function() {
-    var width = $('body').width();
-
-    if (width > 800) {
-      $ul.show();
-    } else {
-      $ul.hide();
-    }
-  };
-
-  $hamburger.click(function(){
-    $ul.toggle('fast');
-  });
-});
-
 // Creates the ckeditor text area
 $('textarea.ckeditor').each(function () {
    var $textarea = $(this);

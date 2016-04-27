@@ -5,7 +5,7 @@
       <p>
         <% if admin_signed_in? %>
 
-          <%= link_to 'Edit', edit_article_path(@article), class: 'back-link ruby' %>
+          <%= link_to 'Edit', edit_article_path(@article), class: 'back-link ruby' %> |
           <%= link_to 'Delete', @article, method: :delete, :confirm => 'Delete?', class: 'back-link ruby' %>
 
         <% end %>

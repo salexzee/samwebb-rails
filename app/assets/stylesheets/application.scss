@@ -132,7 +132,7 @@ h6 {
 		padding: 0;
 		display: inline-block;
 		float: right;
-		
+
 		li {
 			display: inline-block;
 			margin-right: -4px;
@@ -209,7 +209,7 @@ h6 {
 	#intro {
 		background: #f1f1f1;
 		background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAMUlEQVQIW2NkwAHu3r37nxGbHEhCWVmZEUMSJgHShCKJLIEiiS4Bl8QmAZbEJQGSBADLVRueXU+3QwAAAABJRU5ErkJggg==);
-		
+
 
 		section {
 			width: 50%;
@@ -222,7 +222,7 @@ h6 {
 			font-family: 'Work Sans', sans-serif;
 			padding-bottom: 20px;
 		}
-		
+
 		div {
 			text-align: center;
 		}
@@ -251,7 +251,7 @@ h6 {
 			font-family: $stylish-font-stack;
 			text-align: center;
 		}
-		
+
 		#preview-images {
 			margin-top: 30px;
 			width: 100%;
@@ -290,11 +290,12 @@ h6 {
 				background: #777;
 				color: white;
 			}
-			
+
 		}
 	}
-
 }
+
+
 
 /*************/
 
@@ -382,7 +383,7 @@ h6 {
 	header {
 		width: 100%;
 		min-height: 100vh;
-		background: #444 url("https://dl.dropboxusercontent.com/u/66359502/samwebbcom/images/static/typewriter.jpg") no-repeat center center fixed;
+		background: #444 url("https://dl.dropboxusercontent.com/u/66359502/samwebbcom/images/static/typewriter.jpg") no-repeat 0% 0% fixed;
 		-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
@@ -542,7 +543,7 @@ h6 {
 			margin-top: 50px;
 			margin-bottom: 100px;
 			box-shadow: 0 0 15px steelblue;
-			
+
 			img {
 				max-width: 100%;
 			}
@@ -786,7 +787,7 @@ h6 {
 
 		.home-section {
 			font-size: 1.3em;
-			
+
 			#preview-images {
 				margin-bottom: 10px;
 
@@ -839,7 +840,7 @@ h6 {
 			width: 80%;
 		}
 	}
-	
+
 	#home-page header,
 	#portfolio-page header,
 	#blog-pages header {

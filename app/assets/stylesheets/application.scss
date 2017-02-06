@@ -42,9 +42,65 @@ h6 {
 	margin: 0;
 }
 
+.main-hero {
+	width: 100%;
+	min-height: 100vh;
+	height: 100vh;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	text-align: center;
+	background-color: #444444;
+	background-position: center center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+
+	&.index-hero {
+		background-image: url("https://dl.dropboxusercontent.com/u/66359502/samwebbcom/images/static/my_mac_darken_1500w.jpg");
+	}
+
+	&.portfolio-hero {
+		background-image: url("https://dl.dropboxusercontent.com/u/66359502/samwebbcom/images/static/programming.jpg");
+	}
+
+	&.blog-hero {
+		background-image: url("https://dl.dropboxusercontent.com/u/66359502/samwebbcom/images/static/typewriter.jpg");
+	}
+
+	.hero-title {
+		color: white;
+	}
+
+ 	.hero-title {
+		padding-bottom: 30px;
+		font-size: 5em;
+		font-weight: 200;
+		width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+	}
+}
+
 .container {
 	width: 70%;
 	margin: 0 auto;
+}
+
+.hero-container {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	flex-wrap: wrap;
+	height: 100%;
+  position: relative;
+}
+
+.inline-link {
+  color: steelblue;
+  text-decoration: none;
 }
 
 
@@ -99,6 +155,7 @@ h6 {
   font-size: 1.4em;
   transition: .2s;
   margin: 0 15px;
+  text-transform: uppercase;
 }
 
 .btn:hover {
@@ -169,47 +226,9 @@ h6 {
 /* Home Page */
 /*************/
 #home-page {
-	header {
-		width: 100%;
-		min-height: 100vh;
-		background: #444 url("https://dl.dropboxusercontent.com/u/66359502/samwebbcom/images/static/my_mac_darken_1500w.jpg") no-repeat center center fixed;
-		-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-size: cover;
-  	text-align: center;
-
-  	h1,
-  	a {
-  		color: white;
-  	}
-
-  	h1 {
-  		padding-top: 30%;
-  		padding-bottom: 30px;
-  		font-size: 5em;
-  		font-weight: 200;
-  	}
-
-  	a {
-  		text-decoration: none;
-  		border: 2px solid white;
-  		padding: 5px 10px;
-  		font-size: 1.4em;
-  		transition: .2s;
-  		margin: 0 15px;
-  	}
-
-  	a:hover {
-  		background: white;
-  		color: black;
-  	}
-	}
-
 	#intro {
 		background: #f1f1f1;
 		background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAMUlEQVQIW2NkwAHu3r37nxGbHEhCWVmZEUMSJgHShCKJLIEiiS4Bl8QmAZbEJQGSBADLVRueXU+3QwAAAABJRU5ErkJggg==);
-
 
 		section {
 			width: 50%;
@@ -225,20 +244,6 @@ h6 {
 
 		div {
 			text-align: center;
-		}
-
-		a {
-			text-decoration: none;
-			font-size: 1.2em;
-			color: #333;
-			border: 2px solid #333;
-			padding: 10px 15px;
-			transition: .2s;
-		}
-
-		a:hover {
-			color: white;
-			background: #333;
 		}
 	}
 
@@ -305,25 +310,6 @@ h6 {
 /******************/
 
 #portfolio-page {
-	header {
-		width: 100%;
-		min-height: 100vh;
-		background: #444 url("https://dl.dropboxusercontent.com/u/66359502/samwebbcom/images/static/programming.jpg") no-repeat center center fixed;
-		-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-size: cover;
-  	text-align: center;
-
-  	h1 {
-  		color: white;
-  		padding-top: 30%;
-  		padding-bottom: 30px;
-  		font-size: 5em;
-  		font-weight: 200;
-  	}
-	}
-
 	#portfolio {
 		width: 100%;
 		padding: 75px 0;
@@ -372,6 +358,13 @@ h6 {
 	}
 }
 
+.portfolio-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  color: steelblue;
+}
+
 /**************/
 
 
@@ -380,25 +373,6 @@ h6 {
 /*******************/
 
 #blog-pages {
-	header {
-		width: 100%;
-		min-height: 100vh;
-		background: #444 url("https://dl.dropboxusercontent.com/u/66359502/samwebbcom/images/static/typewriter.jpg") no-repeat 0% 0% fixed;
-		-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-size: cover;
-  	text-align: center;
-
-  	h1 {
-  		color: white;
-  		padding-top: 30%;
-  		padding-bottom: 30px;
-  		font-size: 5em;
-  		font-weight: 200;
-  	}
-	}
-
 	#blog-intro {
 		padding: 75px 0;
 		width: 100%;

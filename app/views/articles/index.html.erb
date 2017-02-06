@@ -1,14 +1,14 @@
-<div id="blog-pages">
-  <header>
-    <div class="container">
-      <% if @tag %>
-        <h1><%= "#" + @tag.upcase %></h1>
-      <% else %>
-      <h1>Writer's Block</h1>
-      <% end %>
-    </div>
-  </header>
+<header class="main-hero blog-hero">
+  <div class="container hero-container">
+    <% if @tag %>
+      <h1 class="hero-title"><%= "#" + @tag.upcase %></h1>
+    <% else %>
+    <h1 class="hero-title">Writer's Block</h1>
+    <% end %>
+  </div>
+</header>
 
+<div id="blog-pages">
   <section id="blog-intro">
     <div class="container">
       <p id="quote">
@@ -49,5 +49,3 @@
 
 
 </div>
-
-

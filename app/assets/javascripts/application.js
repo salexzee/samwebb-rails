@@ -28,12 +28,3 @@ $(window).load(function(){
     hljs.highlightBlock(block);
   });
 });
-
-$(window).scroll(function(){
-  var wScroll = $(this).scrollTop();
-  if(wScroll < $(this).height()){
-    $('#blog-pages').find('header').css({
-      backgroundPosition: "50% " + (wScroll / 2.2).toString() + "%"
-    });
-  }
-});

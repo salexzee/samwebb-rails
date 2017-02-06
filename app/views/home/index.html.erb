@@ -1,19 +1,17 @@
+<header class="main-hero index-hero">
+  <div class="container hero-container">
+    <h1 class="hero-title">Web Developer</h1>
+  </div>
+</header>
+
 <div id="home-page">
-  <header>
-    <div class="container">
-      <h1>Web Developer</h1>
-      <div class="call-to-action">
-        <%= link_to "My Work", home_portfolio_path %>
-        <%= mail_to "510samwebb@gmail.com" do %>
-          Email Me
-        <% end %>
-      </div>
-    </div>
-  </header>
   <div id="intro">
     <section class="container home-section">
-      <h2>As a Full Stack Web Developer...</h2>
-      <p>My goal is to understand the problems you're facing and to work with you to solve them. The main way I do this is by using technologies including: HTML5, CSS3, JavaScript and Ruby on Rails/NodeJS to build small and large scale web applications.</p>
+      <h2>Front End Dev By Job Title, Full Stack Dev At Heart</h2>
+
+      <p>My name is Sam, and I am a Front End Developer at a company called Brand Value Accelerator (BVA for short). My main responsibility is to help clients take their businesses to the next level by building fast, responsive and maintainable ecommerce sites built on top of the <%= link_to "Shopify", "https://www.shopify.com/", class: 'inline-link' %> platform.</p>
+
+      <p>In my personal time, I prefer to venture out into Full Stack Development using Ruby and NodeJS . I also like to hike, play guitar, play video games and I'm starting to get more into single board (Raspberry PI, Pine64, Arduino, etc.) computer projects.</p>
     </section>
   </div>
 
@@ -26,7 +24,7 @@
     </div>
 
     <div id="more-projects">
-      <%= link_to "All Projects", home_portfolio_path %>
+      <%= link_to "All Projects", home_portfolio_path, class: 'btn' %>
     </div>
 
   </section>
